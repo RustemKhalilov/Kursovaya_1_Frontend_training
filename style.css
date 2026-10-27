@@ -1,0 +1,2357 @@
+@charset "UTF-8";
+.top-cart {
+  font-family: "Montserrat";
+  background-image: url("img/basketheader.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* чтобы растянулся на всю стр */
+  height: 400px;
+}
+
+.heading-big {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 64px;
+  color: #FFFFFF;
+  margin-top: 127px;
+}
+
+.top-cart__line {
+  border: none;
+  border-top: 0.5px solid #FFFFFF;
+  width: 100%;
+  /* ширина на весь родительский блок */
+  margin: 0;
+  /* убираем отступы, которые браузер добавляет по умолчанию */
+}
+
+.cart {
+  font-family: "Montserrat";
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  margin-top: 64px;
+}
+
+.cart__form {
+  background: #F7F6F6;
+  border-radius: 20px;
+  height: 556px;
+  grid-column: span 4;
+}
+
+.cart__content {
+  grid-column: span 8;
+}
+
+.cart__name-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 14px;
+}
+
+.cart__name-product {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+}
+
+.cart__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-top: 0.5px solid #CACDD8;
+  padding-top: 25px;
+  padding-bottom: 32px;
+}
+
+.cart__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+.cart__img {
+  height: 173px;
+  width: 173px;
+}
+
+.cart__info {
+  width: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.cart__title {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+}
+
+.cart__description {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  color: #888888;
+}
+
+.cart__cost {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  color: #050505;
+}
+
+.cart__link-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 30px;
+}
+
+.cart__link {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+  color: #000000;
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.cart__link:visited {
+  color: #000000;
+  /* чтобы после посещения не менялся */
+}
+
+.cart__link:hover {
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+}
+
+.cart__number {
+  width: 71px;
+  height: 51px;
+  background: #F7F6F6;
+  border: 1px solid #F7F6F6;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cart__buttonblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 7px;
+}
+
+.cart__form-title {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+  margin-top: 42px;
+}
+
+.cart__form-btn1 {
+  font-family: "Montserrat";
+  font-style: Regular;
+  background: white;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  display: block;
+  margin-top: 18px;
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.cart__form-btn1:hover {
+  -webkit-transform: scale(1.12) translateX(-6px);
+          transform: scale(1.12) translateX(-6px);
+}
+
+.cart__form-btn2 {
+  font-family: "Montserrat";
+  font-style: Regular;
+  background: white;
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  display: block;
+  margin-top: 18px;
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.cart__form-btn2:hover {
+  -webkit-transform: scale(1.12) translateX(6px);
+          transform: scale(1.12) translateX(6px);
+}
+
+.cart__sername {
+  font-family: "Montserrat";
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-bottom: 0.5px solid #CACDD8;
+}
+
+.cart__form-personInfo {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 40px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.cart__input {
+  font-family: "Montserrat";
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.cart__input:focus {
+  border-bottom-color: #000;
+}
+
+.cart__input::-webkit-input-placeholder {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.cart__input:-ms-input-placeholder {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.cart__input::-ms-input-placeholder {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.cart__input::placeholder {
+  color: #aaa;
+  font-weight: 400;
+}
+
+.cart__form-priceandbutton {
+  margin-top: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 18px;
+}
+
+.cart__formresume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.cart__form-resume {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+}
+
+.cart__form-price {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+}
+
+.cart__form-orderbtn {
+  font-family: "Montserrat";
+  font-style: Regular;
+  /*background: rgba(222, 215, 215, 0.41);*/
+  border: 1px solid #000000;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 338px;
+  height: 40px;
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  display: block;
+  background-color: transparent;
+  -webkit-animation: pulse 3s ease-in-out 3;
+          animation: pulse 3s ease-in-out 3;
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.cart__form-orderbtn:hover {
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+}
+
+.cart .pageelementmob {
+  display: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    background: rgba(222, 215, 215, 0.41);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    background: rgba(222, 215, 215, 0.41);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    background: rgba(222, 215, 215, 0.41);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background: rgba(222, 215, 215, 0.41);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    background: rgba(222, 215, 215, 0.41);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  100% {
+    background: rgba(222, 215, 215, 0.41);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* ======================================== */
+/* 1. БАЗОВЫЙ СБРОС СТИЛЕЙ (box-sizing)     */
+/* ======================================== */
+* {
+  margin: 0;
+  /* убираем внешние отступы у всех элементов */
+  padding: 0;
+  /* убираем внутренние отступы у всех элементов */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* ширина элемента включает padding и border, не ломает вёрстку */
+}
+
+/* ======================================== */
+/* 2. ОСНОВНЫЕ СТИЛИ ДЛЯ body               */
+/* ======================================== */
+body {
+  font-family: "Montserrat", sans-serif;
+  /* шрифт из Google Fonts */
+  height: 100vh;
+  /* высота на весь экран (100% viewport height) */
+  font-size: 16px;
+  /* базовый размер шрифта */
+}
+
+/* ======================================== */
+/* 3. УТИЛИТА ДЛЯ ЦЕНТРИРОВАНИЯ КОНТЕЙНЕРА  */
+/* ======================================== */
+.center {
+  padding-left: calc(50% - 600px);
+  /* отступ слева, чтобы ширина контента была 1200px и он был по центру */
+  padding-right: calc(50% - 600px);
+  /* отступ справа симметрично */
+}
+
+.button {
+  font-family: "Montserrat", sans-serif;
+  width: 182px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #c4c4c4;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: block;
+  margin-left: auto;
+}
+
+/* ======================================== */
+/* 4. КАСТОМНЫЕ РАДИОКНОПКИ (ваша старая часть, без изменений) */
+/* ======================================== */
+.radio {
+  margin-top: 14px;
+  /* отступ между радиокнопками */
+}
+
+.radio__input {
+  display: none;
+  /* скрываем нативный кружок радио */
+}
+
+.radio__label {
+  position: relative;
+  /* нужно для абсолютного позиционирования псевдоэлементов (кружка и галочки) */
+  padding-left: 28px;
+  /* оставляем место слева для нарисованного кружка */
+  cursor: pointer;
+  /* курсор-рука при наведении */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /* запрещаем выделение текста при клике */
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+}
+
+/* Рисуем внешний кружок (пустая радиокнопка) */
+.radio__label::before {
+  content: '';
+  /* без этого псевдоэлемент не появится */
+  position: absolute;
+  /* позиционируем относительно .radio__label */
+  left: 0;
+  /* прижимаем к левому краю */
+  top: 50%;
+  /* верхний край посередине высоты лейбла */
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  /* поднимаем на половину своей высоты – точное центрирование по вертикали */
+  width: 15px;
+  /* ширина кружка */
+  height: 15px;
+  /* высота кружка */
+  border: 1px solid #000000;
+  /* синяя рамка толщиной 2px */
+  border-radius: 50%;
+  /* делаем круг */
+  background: white;
+  /* белый фон внутри */
+}
+
+/* Рисуем галочку (или точку) ВНУТРИ кружка, когда радио выбрано */
+.radio__input:checked + .radio__label::after {
+  content: '';
+  /* псевдоэлемент появляется только для выбранного состояния */
+  position: absolute;
+  /* позиционируем относительно .radio__label */
+  left: 5px;
+  /* отступ слева, чтобы галочка была по центру (18px кружок - 8px галочка = 10px / 2 = 5px) */
+  top: 50%;
+  /* вертикальное центрирование */
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 8px;
+  /* ширина картинки-галочки */
+  height: 8px;
+  /* высота картинки-галочки */
+  /* data:image/svg+xml с чёрной галочкой (stroke=#000000) в кодировке URL */
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.353516 2.72363L3.85352 6.22363L6.85352 0.223633' stroke='%23000000' stroke-width='0.8'/%3E%3C/svg%3E");
+  background-size: contain;
+  /* картинка масштабируется, чтобы влезть в 8x8 */
+  background-repeat: no-repeat;
+  /* не повторять */
+  background-position: center;
+  /* по центру */
+}
+
+/* ======================================== */
+/* 5. ДВОЙНОЙ ПОЛЗУНОК (ИНТЕРВАЛ ЦЕН)       */
+/*    ОДНА ПОЛОСКА, ДВА МАРКЕРА              */
+/* ======================================== */
+.filtering-form__fieldset {
+  border: none;
+  /* убирает чёрную рамку */
+  padding: 0;
+  /* опционально: убирает внутренние отступы */
+  margin: 0;
+  /* опционально: убирает внешние отступы */
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+/* Контейнер всего двойного ползунка */
+.double-range {
+  position: relative;
+  /* чтобы внутренние элементы позиционировались абсолютно относительно этого блока */
+  width: 100%;
+  /* ширина на всю доступную область */
+  /* margin: 0px 0 30px; */
+  /* внешние отступы: сверху 20px, снизу 30px (чтобы не слипалось) */
+  height: 20px;
+  /* задаём фиксированную высоту – якорь для позиционирования */
+}
+
+/* Серая дорожка (фон) и синяя заливка (между маркерами) имеют общие свойства */
+.double-range__track,
+.double-range__filled {
+  position: absolute;
+  /* позиционируются относительно .double-range */
+  left: 0;
+  /* прижаты к левому краю */
+  top: 50%;
+  /* верхний край на середине родительской высоты (20px / 2 = 10px) */
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  /* смещаем вверх на половину своей высоты – идеальное вертикальное центрирование */
+  height: 1px;
+  /* толщина линии */
+  border-radius: 1px;
+  /* скругляем углы (4px высота → радиус 2px даёт скругление по бокам) */
+  pointer-events: none;
+  /* линия не перехватывает события мыши, чтобы клики уходили к ползункам */
+}
+
+/* Серая дорожка – полная ширина */
+.double-range__track {
+  width: 100%;
+  /* от левого до правого края контейнера */
+  background: #000000;
+  /* светло-серый цвет */
+}
+
+/* Синяя заливка – её ширина и положение левого края будут меняться в JS */
+.double-range__filled {
+  background: #3b82f6;
+  /* синий цвет, как у кружков */
+}
+
+/* Оба ползунка (<input type="range">) накладываются поверх дорожки */
+.double-range__input {
+  position: absolute;
+  /* абсолютно внутри .double-range */
+  top: -25%;
+  /* прижимаем к верху контейнера (20px высоты) */
+  left: 0;
+  /* прижимаем к левому краю */
+  width: 100%;
+  /* ширина на весь контейнер */
+  height: 100%;
+  /* высота 20px (как у контейнера) */
+  margin: 0;
+  /* убираем стандартные отступы браузера */
+  -webkit-appearance: none;
+  /* убираем стандартный стиль range в Chrome/Safari/Edge */
+  background: transparent;
+  /* фон прозрачный, чтобы видеть нашу кастомную дорожку */
+  pointer-events: none;
+  /* вся область input не реагирует на мышь, кроме кружка (ниже вернём) */
+}
+
+/* ===== Стили для КРУЖКА (маркера) в браузерах на WebKit (Chrome, Safari, Edge) ===== */
+.double-range__input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* убираем стандартный кружок */
+  pointer-events: auto;
+  /* возвращаем обработку мыши только на кружок – его можно тащить */
+  width: 8px;
+  /* ширина маркера */
+  height: 8px;
+  /* высота маркера */
+  border-radius: 50%;
+  /* делаем круглым */
+  background: #000000;
+  /* синий фон */
+  border: 2px solid black;
+  /* белая обводка */
+  -webkit-box-shadow: 0 1px 3px black;
+          box-shadow: 0 1px 3px black;
+  /* лёгкая тень для объёма */
+  cursor: pointer;
+  /* курсор-рука при наведении */
+  z-index: 2;
+  /* чтобы маркер был выше любых других слоёв */
+}
+
+/* Скрываем стандартную дорожку WebKit (она нам не нужна) */
+.double-range__input::-webkit-slider-runnable-track {
+  background: transparent;
+  /* прозрачный фон */
+  border: none;
+  /* убираем рамку */
+  height: 4px;
+  /* задаём высоту трека, чтобы кружок центрировался */
+  margin-top: 8px;
+  /* смещаем невидимый трек вниз на 8px (20px контейнера - 4px трека = 16px / 2 = 8px) – это центрирует кружок по вертикали */
+}
+
+/* ===== Стили для КРУЖКА в Firefox ===== */
+.double-range__input::-moz-range-thumb {
+  width: 16px;
+  /* ширина */
+  height: 16px;
+  /* высота */
+  border-radius: 50%;
+  /* круг */
+  background: #3b82f6;
+  /* синий */
+  border: 2px solid white;
+  /* белая обводка */
+  cursor: pointer;
+  /* рука */
+  pointer-events: auto;
+  /* разрешаем таскание в Firefox */
+}
+
+/* Скрываем стандартную дорожку Firefox */
+.double-range__input::-moz-range-track {
+  background: transparent;
+  /* прозрачный фон */
+  border: none;
+  /* без рамки */
+  height: 4px;
+  /* высота трека важна для правильного позиционирования кружка */
+}
+
+/* Убираем синюю рамку фокуса (для всех браузеров) */
+.double-range__input:focus {
+  outline: none;
+  /* стандартный outline портит внешний вид – убираем */
+}
+
+.double-range__values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  color: #000000;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  /* отступ от цифр до полоски */
+  /* margin-top не нужен */
+}
+
+.filtering-form__values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  color: #000000;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  /* отступ от цифр до полоски */
+  /* margin-top не нужен */
+}
+
+/* ======================================== */
+/* 6. КАСТОМНЫЕ ЧЕКБОКСЫ ЦВЕТА              */
+/*    ПРИВЕДЕНО К ТОЙ ЖЕ ЛОГИКЕ, ЧТО RADIO  */
+/* ======================================== */
+/* Список цветных квадратов */
+.color-list {
+  display: -ms-grid;
+  display: grid;
+  /* включаем CSS Grid — сеточную раскладку */
+  -ms-grid-columns: (15px)[7];
+      grid-template-columns: repeat(7, 15px);
+  /* создаём 7 колонок по 15px:
+       первые 7 квадратов попадут в первую строку,
+       следующие 7 — во вторую */
+  gap: 14px 13px;
+  /* первый размер — расстояние между строками,
+       второй размер — расстояние между колонками */
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  /* ширина блока будет ровно по содержимому,
+           а не растягиваться на всю колонку */
+  margin-top: 14px;
+}
+
+/* Обёртка одного цвета — аналог .radio */
+.color {
+  line-height: 0;
+  /* убираем лишнюю высоту строки вокруг квадратного элемента */
+}
+
+/* Скрываем нативный чекбокс, но оставляем его рабочим элементом формы */
+.color__input {
+  position: absolute;
+  /* убираем input из обычного потока документа */
+  opacity: 0;
+  /* делаем input невидимым, но не удаляем его полностью */
+  width: 1px;
+  /* минимальная ширина, чтобы элемент технически существовал */
+  height: 1px;
+  /* минимальная высота, чтобы элемент технически существовал */
+}
+
+/* Label — кликабельная область для выбора цвета */
+.color__label {
+  position: relative;
+  /* нужно для абсолютного позиционирования ::before и ::after */
+  display: inline-block;
+  /* label становится блочно-строчным элементом, ему можно задать размеры */
+  width: 15px;
+  /* ширина кликабельной области */
+  height: 15px;
+  /* высота кликабельной области */
+  cursor: pointer;
+  /* курсор-рука при наведении */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /* запрещаем случайное выделение текста при клике */
+}
+
+/* Рисуем сам цветной квадрат */
+.color__label::before {
+  content: '';
+  /* без content псевдоэлемент не появится */
+  position: absolute;
+  /* позиционируем квадрат относительно .color__label */
+  left: 0;
+  /* прижимаем к левому краю label */
+  top: 0;
+  /* прижимаем к верхнему краю label */
+  width: 15px;
+  /* ширина цветного квадрата */
+  height: 15px;
+  /* высота цветного квадрата */
+  border: 2px solid #cccccc;
+  /* светлая рамка вокруг цвета */
+  border-radius: 0px;
+  /* слегка скругляем углы */
+  background-color: var(--color-value);
+  /* цвет берём из CSS-переменной, заданной ниже в модификаторах */
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  /* плавное изменение рамки/тени */
+}
+
+/* При наведении добавляем лёгкую внешнюю тень */
+.color__label:hover::before {
+  -webkit-box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  /* визуальная подсказка, что квадрат кликабельный */
+}
+
+/* Когда чекбокс выбран, усиливаем рамку цветного квадрата */
+.color__input:checked + .color__label::before {
+  border-color: #000000;
+  /* чёрная рамка показывает выбранный цвет */
+}
+
+/* Когда чекбокс выбран, рисуем галочку внутри квадрата */
+.color__input:checked + .color__label::after {
+  content: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.353516 2.72363L3.85352 6.22363L6.85352 0.223633' stroke='%23000000' stroke-width='0.8'/%3E%3C/svg%3E");
+  /* псевдоэлемент появляется только у выбранного чекбокса */
+  position: absolute;
+  /* позиционируем галочку относительно .color__label */
+  left: 30%;
+  /* ставим левый край галочки в центр */
+  top: 50%;
+  /* ставим верхний край галочки в центр */
+  /* центрируем галочку и поворачиваем, чтобы получилась форма check */
+  width: 8px;
+  /* ширина галочки */
+  height: 14px;
+  /* высота галочки */
+  /* белый цвет галочки по умолчанию */
+  /* оставляем только правую и нижнюю границы — так получается галочка */
+}
+
+.color__input:checked + .color__label--black::after,
+.color__input:checked + .color__label--blue::after,
+.color__input:checked + .color__label--violet::after,
+.color__input:checked + .color__label--purple::after {
+  content: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.353516 2.72363L3.85352 6.22363L6.85352 0.223633' stroke='%23ffffff' stroke-width='0.8'/%3E%3C/svg%3E");
+}
+
+/* Для белого квадрата делаем галочку чёрной, иначе белую галочку не будет видно */
+.color__input:checked + .color__label--white::after {
+  border-color: #000000;
+  /* чёрная галочка на белом фоне */
+}
+
+/* Цветовые модификаторы: здесь задаём конкретный цвет каждого квадрата */
+.color__label--white {
+  --color-value: #ffffff;
+  /* белый */
+}
+
+.color__label--black {
+  --color-value: #000000;
+  /* чёрный */
+}
+
+.color__label--red {
+  --color-value: #ff0000;
+  /* красный */
+}
+
+.color__label--blue {
+  --color-value: #0000ff;
+  /* синий */
+}
+
+.color__label--green {
+  --color-value: #008000;
+  /* зелёный */
+}
+
+.color__label--gray {
+  --color-value: #808080;
+  /* серый */
+}
+
+.color__label--orange {
+  --color-value: #ff7a00;
+  /* оранжевый */
+}
+
+.color__label--yellow {
+  --color-value: #ffd600;
+  /* жёлтый */
+}
+
+.color__label--mint {
+  --color-value: #22c993;
+  /* мятный */
+}
+
+.color__label--cyan {
+  --color-value: #00a3e0;
+  /* голубой */
+}
+
+.color__label--violet {
+  --color-value: #6a1fd1;
+  /* фиолетовый */
+}
+
+.color__label--purple {
+  --color-value: #9c16b8;
+  /* пурпурный */
+}
+
+.color__label--lavender {
+  --color-value: #d48cff;
+  /* сиреневый */
+}
+
+.color__label--pink {
+  --color-value: #ff5b9f;
+  /* розовый */
+}
+
+/* Класс для текста, который нужен для доступности, но не должен быть виден на экране */
+.visually-hidden {
+  position: absolute;
+  /* убираем текст из обычного потока */
+  width: 1px;
+  /* минимальная ширина */
+  height: 1px;
+  /* минимальная высота */
+  padding: 0;
+  /* убираем внутренние отступы */
+  margin: -1px;
+  /* прячем возможный пиксель за пределы области */
+  overflow: hidden;
+  /* скрываем всё, что выходит за размер 1px */
+  clip: rect(0, 0, 0, 0);
+  /* старый способ визуально спрятать элемент */
+  white-space: nowrap;
+  /* не даём тексту переноситься */
+  border: 0;
+  /* убираем рамку */
+}
+
+/* ======================================== */
+/* 7. БЛОК "ТИП КОМНАТЫ" СПРАВА            */
+/*    ЧЕКБОКСЫ СДЕЛАНЫ ПО ТОЙ ЖЕ ЛОГИКЕ     */
+/*    input хранит состояние, label рисует   */
+/* ======================================== */
+/* Общая обёртка контента формы: делаем две колонки */
+.filtering-form__content-wrapper {
+  position: relative;
+  /* делаем wrapper точкой отсчёта для absolute-позиционирования .room-type */
+  display: -ms-grid;
+  display: grid;
+  /* включаем CSS Grid для раскладки левой колонки */
+  -ms-grid-columns: 190.5px 190px;
+      grid-template-columns: 190.5px 190px;
+  /* задаём две колонки:
+           первая колонка 190.5px — для блоков "Сроки доставки", "Цена", "Цвет";
+           вторая колонка 190px — место под блок "Тип комнаты" */
+  -webkit-column-gap: 65px;
+          column-gap: 65px;
+  /* расстояние между левой и правой колонкой */
+  row-gap: 16px;
+  /* расстояние по вертикали между блоками в левой колонке */
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  /* прижимаем элементы grid к верхнему краю своих ячеек */
+}
+
+.filtering-form__legend {
+  font-weight: 500;
+  font-style: Medium;
+}
+
+/* Блок "Тип комнаты" ставим справа, но убираем из расчёта строк grid */
+.room-type {
+  position: absolute;
+  /* вынимаем блок из grid-потока, чтобы он не растягивал строки слева */
+  top: 0;
+  /* прижимаем блок к верхнему краю .filtering-form__content-wrapper */
+  right: 0;
+  /* прижимаем блок к правому краю .filtering-form__content-wrapper */
+  width: 190px;
+  /* ширина блока "Тип комнаты" как ширина правой колонки */
+  grid-column: auto;
+  /* отменяем принудительное размещение во второй колонке grid */
+  grid-row: auto;
+  /* отменяем растягивание блока по строкам grid */
+}
+
+/* Заголовок блока "Тип комнаты" */
+.room-type__title {
+  margin-bottom: 20px;
+  /* отступ от заголовка до первого чекбокса */
+  font-size: 16px;
+  /* высота строки заголовка */
+  font-weight: 500;
+  font-style: Regular;
+  /* обычная толщина текста */
+}
+
+/* Один пункт чекбокса — аналог .radio */
+.checkbox {
+  margin-bottom: 14px;
+  /* расстояние между строками чекбоксов */
+}
+
+/* Скрываем штатный чекбокс, но оставляем его рабочим */
+.checkbox__input {
+  position: absolute;
+  /* убираем настоящий input из обычного потока */
+  opacity: 0;
+  /* делаем input невидимым */
+  width: 1px;
+  /* минимальный размер, чтобы элемент оставался в документе */
+  height: 1px;
+  /* минимальный размер, чтобы элемент оставался в документе */
+}
+
+/* Текст чекбокса и место под кастомный квадрат */
+.checkbox__label {
+  position: relative;
+  /* нужно для позиционирования ::before и ::after */
+  display: inline-block;
+  /* чтобы padding-left и псевдоэлементы работали предсказуемо */
+  padding-left: 40px;
+  /* оставляем место слева под квадрат чекбокса */
+  font-size: 18px;
+  /* размер текста как на скриншоте */
+  line-height: 20px;
+  /* высота строки почти равна высоте квадрата */
+  cursor: pointer;
+  /* курсор-рука при наведении */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /* запрещаем выделение текста при клике */
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 14px;
+}
+
+/* Рисуем пустой квадрат чекбокса */
+.checkbox__label::before {
+  content: '';
+  /* без content псевдоэлемент не появится */
+  position: absolute;
+  /* позиционируем квадрат относительно label */
+  left: 0;
+  /* прижимаем квадрат к левому краю */
+  top: 50%;
+  /* ставим верхний край по центру строки */
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  /* поднимаем на половину высоты — так квадрат становится ровно по центру */
+  width: 15px;
+  /* ширина квадрата */
+  height: 15px;
+  /* высота квадрата */
+  border: 1px solid #888888;
+  /* серая рамка как у стандартного чекбокса на скриншоте */
+  background-color: #ffffff;
+  /* белый фон внутри квадрата */
+}
+
+/* Когда чекбокс выбран, немного усиливаем рамку */
+.checkbox__input:checked + .checkbox__label::before {
+  border-color: #000000;
+  /* чёрная рамка у выбранного чекбокса */
+}
+
+/* Когда чекбокс выбран, рисуем галочку внутри квадрата */
+.checkbox__input:checked + .checkbox__label::after {
+  content: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.353516 2.72363L3.85352 6.22363L6.85352 0.223633' stroke='%23000000' stroke-width='0.8'/%3E%3C/svg%3E");
+  /* сам символ галочки */
+  position: absolute;
+  /* позиционируем галочку относительно label */
+  left: 4px;
+  /* небольшой отступ слева внутри квадрата */
+  top: 50%;
+  /* вертикально ставим по центру */
+  -webkit-transform: translateY(-55%);
+          transform: translateY(-55%);
+  /* точная подстройка, чтобы галочка выглядела по центру */
+  font-size: 16px;
+  /* размер галочки */
+  line-height: 1;
+  /* убираем лишнюю высоту строки у символа */
+  color: #000000;
+  /* чёрная галочка */
+}
+
+/* Кнопка "Применить" внизу правого блока */
+.room-type__button {
+  width: 190px;
+  height: 40px;
+  /* кнопка занимает всю ширину блока "Тип комнаты" */
+  margin-top: 32px;
+  /* отступ сверху от последнего чекбокса до кнопки */
+  /* внутренние отступы кнопки: сверху/снизу 14px, слева/справа 24px */
+  border: 1px solid #000000;
+  /* чёрная рамка вокруг кнопки */
+  border-radius: 24px;
+  /* скругление углов кнопки */
+  background-color: #ffffff;
+  /* белый фон кнопки */
+  font-family: "Montserrat", sans-serif;
+  /* шрифт кнопки */
+  font-size: 18px;
+  /* размер текста внутри кнопки */
+  cursor: pointer;
+  /* при наведении курсор становится рукой */
+}
+
+/* Небольшой эффект при наведении на кнопку */
+.room-type__button:hover {
+  background-color: #f5f5f5;
+  /* лёгкая серая заливка при наведении */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.top {
+  font-family: "Montserrat";
+  background-image: url("img/img1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 735px;
+}
+
+.top-catalog {
+  font-family: "Montserrat";
+  background-image: url("img/catalog_header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 76px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header__link {
+  white-space: nowrap;
+  text-decoration: none;
+  /* убираем подчёркивание по умолчанию */
+  color: #fff;
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.header__link:hover {
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+}
+
+.header input {
+  height: 41px;
+  width: 288px;
+  margin: 0 auto;
+  /* центрирование внутри flex-родителя */
+  border-radius: 30px;
+  /* скругление краёв */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  /* полупрозрачная белая рамка */
+  background: transparent;
+  /* полностью прозрачный фон */
+  padding: 10px 20px;
+  /* внутренние отступы для текста */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* ширина включает padding и border */
+  color: #fff;
+  /* цвет вводимого текста (белый) */
+  font-size: 16px;
+  /* размер шрифта */
+  outline: none;
+}
+
+.header input::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-style: Regular;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header input:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: Regular;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header input::-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: Regular;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header input::placeholder {
+  font-family: "Montserrat";
+  font-style: Regular;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header nav {
+  margin: 0;
+  padding: 0;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+  /* добавляем подчёркивание при наведении */
+}
+
+.header__textstyle {
+  margin: 0;
+  /* убираем возможные отступы */
+  font-weight: 600;
+  font-size: 36px;
+  color: #FFFFFF;
+  line-height: 100%;
+  white-space: nowrap;
+  /* чтобы текст не переносился */
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  gap: 32px;
+}
+
+.menu-mob {
+  display: none;
+}
+
+.top-catalog__line {
+  border: none;
+  border-top: 0.5px solid #FFFFFF;
+  width: 100%;
+  /* ширина на весь родительский блок */
+  margin: 0;
+  /* убираем отступы, которые браузер добавляет по умолчанию */
+}
+
+.top__line {
+  border: none;
+  border-top: 0.5px solid #FFFFFF;
+  width: 100%;
+  /* ширина на весь родительский блок */
+  margin: 0;
+  /* убираем отступы, которые браузер добавляет по умолчанию */
+}
+
+.pageelement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 32px;
+}
+
+.for-box {
+  padding-top: 64px;
+}
+
+.for-box__heading {
+  font-family: "Montserrat";
+  font-style: SemiBold;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.for {
+  margin-top: 32px;
+  display: -ms-grid;
+  display: grid;
+  gap: 32px;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.for__item {
+  height: 415px;
+  grid-column: span 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.for__item_big {
+  grid-column: span 6;
+}
+
+.for__item_1 {
+  background-image: url(img/for_item1.jpg);
+}
+
+.for__item_2 {
+  background-image: url(img/for_item2.jpg);
+}
+
+.for__item_3 {
+  background-image: url(img/for_item3.jpg);
+}
+
+.for__item_4 {
+  background-image: url(img/for_item4.jpg);
+}
+
+.for__item_5 {
+  background-image: url(img/for_item5.jpg);
+}
+
+.for__text {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 34px;
+  color: #FFFFFF;
+}
+
+.hero {
+  font-family: "Montserrat";
+  font-style: SemiBold;
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+}
+
+.hero__catalogtitle {
+  margin-top: 127px;
+  font-weight: 600;
+  font-size: 64px;
+}
+
+.hero__title {
+  white-space: pre-line;
+  /* Если в html в блоке div задать построчную то данное свойство сохраяет html переносы */
+  margin-top: 63px;
+  font-weight: 600;
+  font-size: 64px;
+  width: 792px;
+}
+
+.hero__textstyle {
+  margin-top: 16px;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+}
+
+.hero__link {
+  display: inline-block;
+  /* чтобы можно было задать margin-top: 24px; */
+  margin-top: 16px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  text-decoration: underline;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  color: #FFFFFF;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+  /* убираем подчёркивание по умолчанию */
+}
+
+.hero__link:hover {
+  text-decoration: underline;
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+  /* добавляем подчёркивание при наведении */
+}
+
+.productpart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.productpartcatalog {
+  font-family: "Montserrat";
+  font-style: SemiBold;
+  margin-top: 64px;
+}
+
+.productpartcatalog__box {
+  margin-top: 32px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  row-gap: 48px;
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
+}
+
+.productpartcatalog__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.productpartcatalog__filter-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.select-css {
+  font-family: "Montserrat";
+  font-style: SemiBold;
+  width: 182px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px 40px 10px 15px;
+  font-size: 16px;
+  border-radius: 20px;
+  /* новая иконка */
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018%209%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M8.66028%208.25L2.36094e-05%20-1.63133e-06L17.3205%20-1.17124e-07L8.66028%208.25Z%22%2F%3E%3C%2Fsvg%3E");
+  background-position: calc(100% - 20px) center;
+  /* справа с отступом 20px, по вертикали центр */
+  background-size: 12px;
+  /* размер иконки — подбери под свой дизайн */
+  background-repeat: no-repeat;
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.select-css:hover {
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+}
+
+.select-type {
+  font-family: "Montserrat";
+  font-style: SemiBold;
+  max-width: 227px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px 40px 10px 15px;
+  font-size: 16px;
+  border-radius: 20px;
+  /* новая иконка */
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2018%209%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M8.66028%208.25L2.36094e-05%20-1.63133e-06L17.3205%20-1.17124e-07L8.66028%208.25Z%22%2F%3E%3C%2Fsvg%3E");
+  background-position: calc(100% - 20px) center;
+  /* справа с отступом 20px, по вертикали центр */
+  background-size: 12px;
+  /* размер иконки — подбери под свой дизайн */
+  background-repeat: no-repeat;
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.select-type:hover {
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+}
+
+.productpartcatalog__links {
+  font-family: "Montserrat";
+  font-style: Regular;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.productpartcatalog__link {
+  display: inline-block;
+  text-decoration: underline;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  color: #888888;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.productpartcatalog__link:hover {
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+}
+
+.productpart__link {
+  white-space: nowrap;
+  text-decoration: none;
+  /* убираем подчёркивание по умолчанию */
+  padding: 20px;
+  color: #000000;
+}
+
+.productpart__offers {
+  font-family: "Montserrat";
+  font-style: SemiBold;
+  padding-top: 64px;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.productpart__title {
+  font-family: "Montserrat";
+  font-style: SemiBold;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.productpart__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.productpart__box {
+  margin-top: 32px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
+  row-gap: 48px;
+}
+
+.product {
+  position: relative;
+  /* теперь absolute внутри будет привязан к карточке */
+  grid-column: span 4;
+  /* margin-top: 32px; */
+  /* внешний отступ сверху */
+  padding: 0px;
+  font-family: "Montserrat";
+  font-style: SemiBold;
+}
+
+.product__icons {
+  display: none;
+  /* Скрываем по умолчанию */
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  gap: 23px;
+}
+
+.product:hover .product__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* Показываем при наведении */
+}
+
+.product__img {
+  height: 250px;
+  width: 100%;
+  display: block;
+}
+
+.product__name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.product__desc {
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888;
+  margin-bottom: 12px;
+  /* добавляем нижний отступ */
+}
+
+.product__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+.product__discount {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #050505;
+}
+
+.product__cost {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #888888;
+}
+
+.background__img1 {
+  background-image: url("img/img1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.pageelement__link {
+  font-family: "Montserrat";
+  font-style: Regular;
+  font-weight: 400;
+  color: #000000;
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.pageelement__link:hover {
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+}
+
+.pageelementmob__link {
+  font-family: "Montserrat";
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #000000;
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.pageelementmob__link:hover {
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+}
+
+.productpart__pageelement {
+  font-family: "Montserrat";
+  font-style: Regular;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+.footer {
+  margin-top: 69px;
+  padding-top: 32px;
+  background-color: #F7F6F6;
+  font-family: "Montserrat";
+  font-style: SemiBold;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  height: 207px;
+}
+
+.footer__menu {
+  margin-top: 12px;
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
+.footer__title {
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 36px;
+  color: #000000;
+}
+
+.footer__text {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+}
+
+.footer__link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+}
+
+.footer__contacts {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+}
+
+.footer__social-link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.footer__social-link:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-filter: brightness(0) saturate(100%);
+          filter: brightness(0) saturate(100%);
+}
+
+.form {
+  margin: 0;
+  font-family: "Montserrat";
+  font-style: SemiBold;
+}
+
+.form__input {
+  font-family: "Montserrat";
+  font-style: Regular;
+  font-weight: 400;
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  width: 275px;
+  height: 40px;
+  padding: 0 16px;
+  line-height: 40px;
+  font-weight: normal;
+  vertical-align: middle;
+  font-size: 12px;
+  color: #C4C4C4;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: rgba(196, 196, 196, 0.7);
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+}
+
+.form__input:-ms-input-placeholder {
+  color: rgba(196, 196, 196, 0.7);
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+}
+
+.form__input::-ms-input-placeholder {
+  color: rgba(196, 196, 196, 0.7);
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+}
+
+.form__input::placeholder {
+  color: rgba(196, 196, 196, 0.7);
+  font-size: 12px;
+  font-weight: 400;
+  display: block;
+}
+
+.form__text {
+  font-size: 12px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 8px;
+  /* добавляем нижний отступ */
+}
+
+.form__btn {
+  font-family: "Montserrat";
+  font-style: Regular;
+  background: rgba(222, 215, 215, 0.41);
+  border: 1px solid rgba(222, 215, 215, 0.41);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 20px;
+  width: 275px;
+  height: 40px;
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  display: block;
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.form__btn:hover {
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+}
+
+.filter-box {
+  position: relative;
+}
+
+.filter-select-wrapper {
+  position: relative;
+}
+
+.filter-button-wrapper {
+  position: absolute;
+  top: 54px;
+  right: 0;
+  z-index: 10;
+}
+
+.filtering-form {
+  max-width: 525.5px;
+  height: 548px;
+  padding: 40px 40px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 4px 67px rgba(0, 0, 0, 0.32);
+          box-shadow: 0 4px 67px rgba(0, 0, 0, 0.32);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pageelementmob {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 786px/2);
+    padding-right: calc(50% - 786px/2);
+  }
+  .header__link {
+    padding: 0;
+  }
+  .hero__title {
+    width: 786px;
+  }
+  .for__item {
+    height: 268px;
+  }
+  .productpart__box {
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+    row-gap: 0;
+    row-gap: 30px;
+  }
+  .product {
+    grid-column: span 6;
+  }
+  .productpart__offers {
+    padding-top: 64px;
+  }
+  .footer {
+    margin-top: 68px;
+  }
+  .footer__title-box {
+    display: none;
+    width: 0;
+  }
+  .form__input {
+    width: 260px;
+  }
+  .form__btn {
+    width: 260px;
+  }
+  .form__text {
+    width: 260px;
+  }
+  /*Стили для корзины */
+  .cart {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    row-gap: 64px;
+  }
+  .cart__content {
+    grid-column: span 4;
+  }
+  .cart__number {
+    width: 51px;
+  }
+  .cart__form {
+    width: 378px;
+  }
+  .cart__form-orderbtn {
+    width: 338px;
+  }
+  .pageelementmob {
+    display: none;
+  }
+}
+
+@media (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 16px;
+  }
+  .hero__title {
+    width: 343px;
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 29px;
+  }
+  .hero__textstyle {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+  }
+  .hero__link {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+  }
+  .hero__catalogtitle {
+    margin-top: 82px;
+  }
+  .header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 32px;
+  }
+  .header__input {
+    display: none;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__textstyle {
+    width: 99px;
+    font-size: 18px;
+  }
+  .menu-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 33px;
+  }
+  .top__line {
+    display: none;
+  }
+  .top-catalog__line {
+    display: none;
+  }
+  .for-box {
+    padding-top: 32px;
+  }
+  .for-box__heading {
+    font-size: 24px;
+  }
+  .for {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .for__item {
+    grid-column: 1 / -1;
+    height: 375px;
+  }
+  .for__item_big {
+    height: 244px;
+  }
+  .for__item__text {
+    font-size: 28px;
+  }
+  .select-css {
+    width: 164px;
+    font-size: 14px;
+  }
+  .select-type {
+    margin-top: 12px;
+    width: 203px;
+    font-size: 14px;
+  }
+  .productpart__offers {
+    font-size: 24px;
+    margin-top: 32px;
+  }
+  .productpart__box {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .product__img {
+    height: 226px;
+  }
+  .product__name {
+    font-size: 18px;
+  }
+  .product__desc {
+    font-size: 14px;
+  }
+  .product__price {
+    font-size: 18px;
+  }
+  .product__discount {
+    font-size: 18px;
+  }
+  .product__cost {
+    font-size: 18px;
+  }
+  .product__offers {
+    margin-top: 32px;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 400px;
+    margin-top: 36px;
+  }
+  .footer__title-box {
+    display: none;
+  }
+  .footer__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 69px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 364px;
+    width: 375px;
+  }
+  .footer .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8px;
+  }
+  .filtering-form {
+    height: 960px;
+  }
+  .filter-button-wrapper {
+    position: absolute;
+    /* top: 54px; */
+    right: -96px;
+    z-index: 10;
+    /* display: none; */
+  }
+  .productpartcatalog {
+    margin-top: 39px;
+  }
+  .productpartcatalog__box {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .productpartcatalog__filter {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 10px;
+  }
+  .productpartcatalog__links {
+    font-size: 14px;
+  }
+  .hero__catalogtitle {
+    font-size: 48px;
+  }
+  .productpartcatalog__filter-box {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .filtering-form__content-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    /* оставляем одну колонку */
+  }
+  .room-type {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    /* отменяем принудительную вторую колонку */
+    -ms-grid-row: 4;
+    grid-row: 4;
+    /* отменяем растягивание по строкам */
+    width: 100%;
+    /* блок занимает всю доступную ширину */
+    margin-top: 32px;
+  }
+  .room-type__button {
+    margin-top: 40px;
+    /* на мобильном делаем отступ меньше, чтобы не было огромной пустоты */
+  }
+  /*Стили для корзины */
+  .cart {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    margin-top: 92px;
+    gap: 0;
+  }
+  .cart__content {
+    grid-column: span 2;
+  }
+  .cart__left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cart__buttonblock {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 14;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .cart__img {
+    display: none;
+  }
+  .cart__info {
+    max-width: 220px;
+  }
+  .cart__form {
+    margin-top: 32px;
+    width: 343px;
+  }
+  .cart__form-btn1 {
+    width: 166px;
+    font-size: 12px;
+  }
+  .cart__form-btn2 {
+    width: 163px;
+    font-size: 12px;
+  }
+  .cart__form-orderbtn {
+    width: 300px;
+  }
+  .cart__title {
+    font-size: 18px;
+  }
+  .cart__cost {
+    font-size: 14px;
+  }
+  .cart__name-product {
+    display: none;
+  }
+  .heading-big {
+    font-size: 48px;
+    text-align: center;
+  }
+  .productpart__pageelement {
+    margin-top: 0;
+  }
+  .pageelement {
+    display: none;
+  }
+  .pageelementmob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 32px;
+  }
+  .menu-mob__icon {
+    -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+    transition: color 0.2s ease, -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease, color 0.2s ease;
+    transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+  }
+  .menu-mob__icon:hover {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+}
+/*# sourceMappingURL=style.css.map */
